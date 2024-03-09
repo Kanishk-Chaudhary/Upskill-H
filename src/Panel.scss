@@ -1,0 +1,101 @@
+.Panel{
+    background-color: #363635;
+    color:white;
+    font-family: Space mono;
+    .user{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 4%;
+        gap: 2%;
+    }
+    #log-out{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        
+        button{
+            margin:10px 30px 10px 0;
+           
+        }
+       
+    }
+    #block1{
+        border: 1px solid white;
+        padding: 2%;
+        display: flex;
+        width: 45%;
+        gap: 20px;
+        div{
+            padding: 5px;
+        }
+        p{
+            margin: 10px;
+
+        }
+        p:first-child{
+            font-size: 40px;
+        }
+        p:nth-child(2){
+            font-size: 20px;
+            color: aliceblue;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            vertical-align: middle;
+            
+        }
+    }
+    #block2{
+        width: 45%;
+        border: 1px solid white;
+        padding: 2%;
+        div{
+            width: 50%;
+            height: 10%;
+            border-radius: 20px 0px 20px 0;
+            background-color: #222222;
+            position: relative;
+            margin: 30px 0;
+        }
+        div::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            content: '';
+            background-color: #0075FF;
+            border-radius: 20px 0px 20px 0;
+        }
+
+    }
+    .nearby{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        strong{
+            font-size: 30px;
+            margin: 4% 0;
+            
+        }
+        img{
+            width: 60px;
+        }
+        #list{
+            width: 60%;
+
+        }
+        .person{
+            border: 1px solid white;
+        padding: 2% 10%;
+        display: flex;
+        gap: 10%;
+        margin: 2% 0;
+        }
+    }
+}
