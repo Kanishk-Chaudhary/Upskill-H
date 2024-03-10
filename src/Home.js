@@ -3,6 +3,27 @@ import './Home.scss';
 
 const Home = () => {
   const [Action,setAction]=useState("Home");
+ const signhandle=(event)=>{
+    event.preventDefault();
+    const serialize=JSON.stringify(FormData)
+    const fetchOption={
+      method:'POST',
+      body:serialize
+    }
+    fetch('/signup',fetchOption)
+
+  }
+  const loghandle=(event)=>{
+    event.preventDefault();
+    const serialize=JSON.stringify(FormData)
+    const fetchOption={
+      method:'POST',
+      body:serialize
+    }
+    fetch('/login',fetchOption)
+
+  }
+  
   return (
     <div className="App">
       <div className='home'>
